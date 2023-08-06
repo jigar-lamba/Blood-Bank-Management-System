@@ -1,0 +1,1 @@
+8th) use 'nslookup' to get you own IP addess and compae to destination addess in file

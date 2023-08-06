@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+    <style>
+        .xyz{
+          margin-bottom: 1px;
+          background-image: url('{% static "image/hp.jpg" %}');
+          background-size: 1900px 900px;
+          background-repeat: no-repeat;
+        }
+        h1{
+          position: absolute;
+          text-align: left;
+          white-space: nowrap;
+          overflow: hidden;
+          width: 12.8em;
+        }
+ 
+        /*set the background colour of div element to black */
+        .wrapper {
+          background-color: black;
+         }
+ 
+         @keyframes type{ 
+          from { 
+               width: 0; 
+               } 
+           }
+      </style>
+      
+</head>
+
+
+<body>
+  {% include "blood/navbar.html" %}
+<section id="section-jumbotron" style="margin-bottom: 0px;" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center xyz">
+    <div class="container text-center">
+        <br><br><br><br><br><br><br><br><img align = "left" src="{% static "image/drop.png" %}" alt="Image" height = "70" width = "70"><br><br><br><br>
+        <h1 style = "font-size:60px; left: 90px; top: 330px;">Sometimes Money Cannot </h1><h1 style = "left: 70px; top: 390px;font-size:60px;">Save Life But Donated Blood</h1>
+        <h1 style = "left: 350px; top: 450px;font-size:60px;">Can</h1>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br>
+    </div>  
+  </section>
+
+  {% include "blood/footer.html" %}
+
+
+</body>
+
+</html>
